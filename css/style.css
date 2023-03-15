@@ -1,0 +1,135 @@
+body {
+    background: pink;
+}
+
+.cat {
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.face {
+    background: white;
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid black;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.ear {
+    position: absolute;
+    top: 190px;
+    left: 193px;
+    z-index: -1;
+}
+
+.ear-right {
+    display: inline-block;
+    background: white;
+    width: 200px;
+    height: 200px;
+    border: 8px solid black;
+    border-radius: 10%;
+    transform: rotate(-13deg); 
+    position: absolute;
+    left: 200px;
+}
+
+.ear-left {
+    display: inline-block;
+    background: white;
+    width: 200px;
+    height: 200px;
+    border: 8px solid black;
+    border-radius: 10%;
+    transform: rotate(13deg);
+}
+
+
+.eye {
+    position: absolute;
+    top: 330px;
+    left: 283px;
+}
+
+.eye-right {
+    display: inline-block;
+    background: rgb(0, 140, 255);
+    width: 30px;
+    height: 50px;
+    border-radius: 40%;
+    position: absolute;
+    left: 200px;
+}
+
+.eye-left {
+    display: inline-block;
+    background: rgb(255, 217, 0);
+    width: 30px;
+    height: 50px;
+    border-radius: 40%;
+    position: absolute;
+}
+
+.mouth {
+    top: 400px;
+    left: 375px;
+    display: inline-block;
+    background-color: palevioletred;
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    border-radius: 10% 10% 50% 50%;
+    z-index: 1;
+}
+
+.whisker-right-top {
+    transform: rotate(-10deg);
+    width: 200px;
+	height: 8px;
+	background: #000000;
+	border-radius: 6px;
+	position: absolute;
+    left: 550px;
+    top: 370px;
+}
+
+.whisker-left-top {
+    transform: rotate(10deg);
+    width: 200px;
+	height: 8px;
+	background: #000000;
+	border-radius: 6px;
+	position: absolute;
+    left: 50px;
+    top: 370px;
+}
+
+.whisker-right-bottom {
+    transform: rotate(15deg);
+    width: 200px;
+	height: 8px;
+	background: #000000;
+	border-radius: 6px;
+	position: absolute;
+    left: 550px;
+    top: 450px;
+}
+
+.whisker-left-bottom {
+    transform: rotate(-15deg);
+    width: 200px;
+	height: 8px;
+	background: #000000;
+	border-radius: 6px;
+	position: absolute;
+    left: 50px;
+    top: 450px;
+}
